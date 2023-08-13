@@ -16,13 +16,13 @@ jobs:
           distribution: 'adopt'
 
       - name: Make gradlew executable
-        run: chmod +x ./gradlewÏ
+        run: chmod +x ./gradlew
 
       - name: Validate Code Style - Project
         run: ./gradlew ktlintCheck --no-daemon
 
       - name: Validate Code Style - App
-        run: ./gradlew app:ktlintCheck --no-daemon
+        run: ./gradlew :app:ktlintCheck --no-daemon
 
       - name: Upload KtLint Reports
         if: ${{ always() }}
