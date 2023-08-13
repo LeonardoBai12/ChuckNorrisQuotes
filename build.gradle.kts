@@ -9,7 +9,3 @@ plugins {
     id("com.google.dagger.hilt.android") version "2.44" apply false
     id("com.github.johnrengelman.shadow") version "6.1.0"
 }
-
-subprojects {
-    apply(from = "${project.rootDir}/ktlint.gradle.kts")
-}
