@@ -26,7 +26,3 @@ To ensure high-quality code, the following tools and processes are used before m
 * All unit tests are run to ensure code functionality and quality.
 
 This process helps maintain code consistency and quality throughout the project.
-
-## Demonstration
-
-You can watch a demo of the application's features on this [YouTube Video](https://www.youtube.com/watch?v=lmRWUWvWtL0) (PT-BR).
