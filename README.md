@@ -14,7 +14,7 @@ The application is built using the following technologies:
 
 ## Getting Started
 
-1. Download the ChuckNorrisQuotes.apk file from the [Build and Deploy APK](https://github.com/LeonardoBai12/ChuckNorrisQuotes/actions/runs/5849222921) action artifacts.
+1. Download the ChuckNorrisQuotes.apk file from the [Build and Deploy APK](https://github.com/LeonardoBai12/ChuckNorrisQuotes/actions/workflows/build_and_deploy_workflow.yml) action artifacts.
 2. Install the APK on your Android device.
 3. Use the application to read some inspiring quotes.
 
