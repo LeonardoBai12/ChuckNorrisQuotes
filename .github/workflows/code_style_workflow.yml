@@ -18,11 +18,8 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Validate Code Style - Project
+      - name: Validate Code Style
         run: ./gradlew ktlintCheck --no-daemon
-
-      - name: Validate Code Style - App
-        run: ./gradlew :app:ktlintCheck --no-daemon
 
       - name: Upload KtLint Reports
         if: ${{ always() }}

@@ -4,7 +4,6 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
-import dagger.hilt.components.SingletonComponent
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.android.Android
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -21,7 +20,7 @@ import kotlinx.serialization.json.Json
 @InstallIn(ViewModelComponent::class)
 object AppModule {
     @Provides
-    fun providesQuoteService() : QuoteService {
+    fun providesQuoteService(): QuoteService {
         return QuoteServiceImpl(
             client = HttpClient(Android) {
                 install(Logging) {
@@ -39,7 +38,7 @@ object AppModule {
     }
 
     @Provides
-    fun provideQuoteRepository(service: QuoteService) : QuoteRepository {
+    fun provideQuoteRepository(service: QuoteService): QuoteRepository {
         return QuoteRepositoryImpl(
             service = service
         )
