@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Chuck Norris Quotes"
 include(":app")
- 
