@@ -1,5 +1,7 @@
 package io.lb.chucknorrisquotes.di
 
+import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
 import dagger.hilt.components.SingletonComponent
@@ -15,8 +17,10 @@ import io.lb.chucknorrisquotes.data.repository.QuoteRepositoryImpl
 import io.lb.chucknorrisquotes.domain.repository.QuoteRepository
 import kotlinx.serialization.json.Json
 
+@Module
 @InstallIn(ViewModelComponent::class)
 object AppModule {
+    @Provides
     fun providesQuoteService() : QuoteService {
         return QuoteServiceImpl(
             client = HttpClient(Android) {
@@ -34,6 +38,7 @@ object AppModule {
         )
     }
 
+    @Provides
     fun provideQuoteRepository(service: QuoteService) : QuoteRepository {
         return QuoteRepositoryImpl(
             service = service
