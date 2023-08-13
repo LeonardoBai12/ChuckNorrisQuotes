@@ -7,6 +7,7 @@ This app displays Chuck Norris' quotes. That's it.
 The application is built using the following technologies:
 
 * [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) for asynchronous programming.
+* [Ktor](https://ktor.io) for client requests.
 * [ViewModel](https://developer.android.com/reference/androidx/lifecycle/ViewModel) for managing UI-related data.
 * [Jetpack Compose](https://developer.android.com/jetpack/compose/documentation) for building the UI.
 * [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) for dependency injection.
